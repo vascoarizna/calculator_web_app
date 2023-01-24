@@ -1,0 +1,9 @@
+<!doctype html>
+<title>Bonus Table</title>
+<div class=page>
+  <h1>Different Combinations of Bonuses</h1>
+  {% for table in tables %}
+    <h2>{{titles[loop.index]}}</h2>
+    {{ table|safe }}
+  {% endfor %}
+</div>
