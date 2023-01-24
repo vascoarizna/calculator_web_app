@@ -15,7 +15,7 @@ app = Flask(__name__)
 
     
 def index():
-    final_matrix=pd.read_csv('final_matrix_parquet.csv')
+    final_matrix=pd.read_csv("https://www.dropbox.com/s/g21186mjf80hy0n/final_matrix_parquet.csv?dl=1")
     #final_matrix=final_matrix.set_index('Range_of_Balance').iloc[1:,:]
 
     threshold = request.args.get("threshold", "")
@@ -44,7 +44,7 @@ def index():
     
 
 def get_df(threshold):
-    final_matrix=pd.read_csv('final_matrix_parquet.csv')
+    final_matrix=pd.read_csv("https://www.dropbox.com/s/g21186mjf80hy0n/final_matrix_parquet.csv?dl=1")
     #final_matrix=final_matrix.set_index('Range_of_Balance').iloc[1:,:]
     look_for_value=final_matrix.iloc[1:,2:61]
     my_df_values=look_for_value[look_for_value<=threshold]
