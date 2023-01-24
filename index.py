@@ -67,7 +67,7 @@ def look_in_DF(final_matrix,df,threshold,deposit):
     return the_list
 
 def combinations(threshold,deposit):
-    final_matrix=pd.read_csv('final_matrix_parquet.csv')
+    final_matrix=pd.read_csv("https://www.dropbox.com/s/g21186mjf80hy0n/final_matrix_parquet.csv?dl=1")
     final_matrix=final_matrix.iloc[1:,:]
     
     #my_df_values = get_df(final_matrix,threshold) 
