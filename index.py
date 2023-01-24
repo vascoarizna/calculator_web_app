@@ -40,7 +40,7 @@ def validate_percentage(the_row,final_matrix,my_df_values,balance,ratio,threshol
 
 
 def combinations(threshold,deposit):
-    final_matrix=pd.read_csv("https://www.dropbox.com/s/g21186mjf80hy0n/final_matrix_parquet.csv?dl=1")
+    final_matrix=pd.read_csv("https://www.dropbox.com/s/g21186mjf80hy0n/final_matrix_parquet.csv?dl=1",index_col=0)
     final_matrix=final_matrix.iloc[1:,:]
     
     #my_df_values = get_df(final_matrix,threshold) 
